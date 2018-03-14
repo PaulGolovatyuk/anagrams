@@ -13,24 +13,24 @@ public class StringReverser {
         return false;
     }
 
-    private static char[] reverseChars(char[] chars1) {
+    private static char[] reverseChars(char[] arrayOfChars) {
         char tmp;
-        for (int i = 0, j = chars1.length - 1; i < chars1.length - 1 && j > i; ) {
-            if (isLetter(chars1[i]) && isLetter(chars1[j])) {
-                tmp = chars1[i];
-                chars1[i] = chars1[j];
-                chars1[j] = tmp;
+        for (int i = 0, j = arrayOfChars.length - 1; i < arrayOfChars.length - 1 && j > i; ) {
+            if (isLetter(arrayOfChars[i]) && isLetter(arrayOfChars[j])) {
+                tmp = arrayOfChars[i];
+                arrayOfChars[i] = arrayOfChars[j];
+                arrayOfChars[j] = tmp;
                 i++;
                 j--;
             }
-            if (!isLetter(chars1[i])) {
+            if (!isLetter(arrayOfChars[i])) {
                 i++;
             }
-            if (!isLetter(chars1[j])) {
+            if (!isLetter(arrayOfChars[j])) {
                 j--;
             }
         }
-        return chars1;
+        return arrayOfChars;
     }
     public static String reverseStrings(String s) {
         String[] strings = splitByWhiteSpace(s);
