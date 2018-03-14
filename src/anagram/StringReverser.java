@@ -41,7 +41,7 @@ public class StringReverser {
                 String str = new String(reverseChars(chars));
                 sb.append(str+" ");
         }
-        return sb.toString();
+        return sb.toString().trim();
     }
 }
 
