@@ -32,6 +32,7 @@ public class StringReverser {
         return arrayOfChars;
     }
     public static String reverseStrings(String s) {
+        String result;
         String[] strings = splitByWhiteSpace(s);
         StringBuilder sb = new StringBuilder();
 
@@ -40,7 +41,14 @@ public class StringReverser {
                 String str = new String(reverseChars(chars));
                 sb.append(str+" ");
         }
-        return sb.toString().trim();
+
+        result = sb.toString();
+
+        if (s.equals(" ")){
+            return " ";
+        }else {
+            return result.trim();
+        }
     }
 }
 

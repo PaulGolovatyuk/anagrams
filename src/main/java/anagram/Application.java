@@ -3,7 +3,7 @@ package main.java.anagram;
 import anagram.StringReverser;
 
 public class Application {
-    private static String lettersOnly = "Messi7 abcd efgh";
+    private static String lettersOnly = " ";
     private static String notLettersOnly = "a1bcd efg!h";
 
     public static void main(String[] args) {
