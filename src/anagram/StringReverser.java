@@ -12,7 +12,6 @@ public class StringReverser {
         }
         return false;
     }
-
     private static char[] reverseChars(char[] arrayOfChars) {
         char tmp;
         for (int i = 0, j = arrayOfChars.length - 1; i < arrayOfChars.length - 1 && j > i; ) {
