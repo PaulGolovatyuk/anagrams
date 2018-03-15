@@ -1,4 +1,6 @@
-package anagram;
+package main.java.anagram;
+
+import anagram.StringReverser;
 
 public class Application {
     private static String lettersOnly = "Messi7 abcd efgh";
@@ -15,6 +17,5 @@ public class Application {
         System.out.println("Reversing strings with not letters only demo: ");
         System.out.println("Before:     " + notLettersOnly);
         System.out.println("After:      " + StringReverser.reverseStrings(notLettersOnly));
-
     }
 }
