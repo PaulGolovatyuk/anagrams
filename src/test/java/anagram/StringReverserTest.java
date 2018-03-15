@@ -13,7 +13,7 @@ public class StringReverserTest {
     }
 
     @Test
-    public void reverseStringsShouldReturnNextString(){
+    public void reverseStringsShouldReturnNextString() {
         assertEquals(StringReverser.reverseStrings(s), "d1cba hgf!e");
     }
 
