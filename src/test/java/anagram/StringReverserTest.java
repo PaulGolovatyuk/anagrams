@@ -8,7 +8,7 @@ public class StringReverserTest {
     private static final String lettersString = "abcd";
     private static final String lettersAndNonLetters = "Messi7";
     private static final String lettersAndWhitespace = "a1bcd efgh";
-    private static final String nonLetters = "12345";
+    private static final String nonLetters = "12345!%";
     private static final String justWhitespace = " ";
     private static final String emptyString = "";
     private static final String nullString = null;
@@ -34,7 +34,7 @@ public class StringReverserTest {
     @Test
     public void nonLettersTest() {
         assertEquals(StringReverser.reverseStrings(nonLetters),
-                "12345");
+                "12345!%");
     }
 
     @Test
